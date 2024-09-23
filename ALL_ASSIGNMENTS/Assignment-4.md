@@ -67,6 +67,16 @@ print(f"Difference between sampling mean and actual mean: {abs(sampling_mean - a
 ## The below is the colab link of the solution
 [colab](https://colab.research.google.com/drive/1fxufFZibS3dkSyfHnlx6iEwTI4eNYo2z#scrollTo=YAuEvAQeYYbG)
 
+![alt text](image-4.png)
+
+
+![alt text](image-5.png)
+
+
+
+
+
+
 
 
 # Approach for Central Limit Theorem Simulation

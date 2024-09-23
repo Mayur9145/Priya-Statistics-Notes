@@ -59,6 +59,49 @@ plt.ylabel('Density')  # Label for the y-axis representing the density (normaliz
 plt.show()
 ```
 
+
+
+
+
+![alt text](image-2.png)
+
+```python
+**Why the Histogram Resembles a Bell Curve**
+
+**The histogram forms a bell-shaped curve because:**
+
+**Central Limit Theorem**: When sampling from a normal distribution, most values will cluster around the mean, with fewer values occurring as you move further away from the mean in either direction.
+
+**Symmetry**: The normal distribution is symmetric around the mean, so the histogram is balanced, with a peak at the center and tapering off on both sides.
+
+**Spread (Standard Deviation)**: The standard deviation controls the width of the bell curve. For this distribution, 68% of the data falls between -1 and 1, resulting in the characteristic "bell" shape.
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##  2. Use Python to load the dataset (score.csv) and plot the distribution of the 'Income' column. Describe its shape and explain why it is not normally distributed.
 
 
@@ -75,13 +118,26 @@ uploaded = files.upload()
 # Assuming the uploaded file is score.csv
 df = pd.read_csv(list(uploaded.keys())[0])
 
+# Set the plot style for clarity
+sns.set_style("whitegrid")
+
 # Plot the distribution of the 'Income' column
 plt.figure(figsize=(10, 6))
-sns.histplot(df['Income'], bins=30, kde=True)
-plt.title('Distribution of Income')
-plt.xlabel('Income')
-plt.ylabel('Frequency')
+
+# Create the histogram with a Kernel Density Estimate (KDE)
+sns.histplot(df['Income'], bins=20, kde=True, color='skyblue', edgecolor='black')
+
+# Add title and labels with clearer font size
+plt.title('Distribution of Income', fontsize=16)
+plt.xlabel('Income', fontsize=14)
+plt.ylabel('Frequency', fontsize=14)
+
+# Add gridlines for clarity
+plt.grid(True, linestyle='--', alpha=0.7)
+
+# Display the plot
 plt.show()
+
 
 ```
 [colab](https://colab.research.google.com/drive/1_j3v48iCkoxZac7ghFYozP2RWR4UqFbK#scrollTo=z7doCJ7nGPOT)
@@ -89,6 +145,40 @@ plt.show()
 
 
 ### The above is the colab file link for question 2
+
+
+
+
+
+
+![alt text](image-3.png)
+
+
+The distribution of income is typically **not normal** because it is often **right-skewed**. Most people have lower to moderate incomes, while fewer individuals earn very high incomes, creating a long tail on the right. This results in an asymmetric distribution, which differs from the symmetric, bell-shaped curve of a normal distribution. Additionally, factors like income inequality and extreme outliers contribute to this non-normal shape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```python
