@@ -65,12 +65,9 @@ print(f"Difference between sampling mean and actual mean: {abs(sampling_mean - a
 ```
 
 ## The below is the colab link of the solution
-[colab](https://colab.research.google.com/drive/1fxufFZibS3dkSyfHnlx6iEwTI4eNYo2z#scrollTo=YAuEvAQeYYbG)
-
-![alt text](image-4.png)
+[colab](https://colab.research.google.com/drive/1q1-dFnT-Fox0Y0-DWDMc7-9zSJAPwCVV)
 
 
-![alt text](image-5.png)
 
 
 

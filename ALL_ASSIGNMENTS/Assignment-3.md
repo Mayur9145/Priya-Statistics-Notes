@@ -24,7 +24,7 @@ plt.show()
 
 ````
 
-[colab](https://colab.research.google.com/drive/1RiEyJpnENBm-LAbaxyy9sBuCWfCdvTTl#scrollTo=u8bnfaI-ESUV)
+[colab](https://colab.research.google.com/drive/1q1-dFnT-Fox0Y0-DWDMc7-9zSJAPwCVV)
 
 
 ### The above is the colab file link  for question 1
@@ -63,7 +63,6 @@ plt.show()
 
 
 
-![alt text](image-2.png)
 
 ```python
 **Why the Histogram Resembles a Bell Curve**
